@@ -1,0 +1,160 @@
+body{
+    min-width: 300px;
+    background-color: #ffb900;
+}
+
+h1{
+    text-align: center;
+    color:#A52A2A;
+    font-family: Brush Script MT, cursive;
+    font-size: 2em;
+    margin: 15px;
+}
+.iconstart{
+    text-align: center;
+    color:#A52A2A;
+    
+}
+
+p.data{
+    text-align: center;
+    color:#A52A2A;
+    font-size:22px;
+    font-family: Brush Script MT, cursive;
+}
+/* cpy code below*/
+h2,h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin-bottom:20px;
+}
+.game-wrapper{
+    margin:0 15px;
+}
+.button{
+    border: 1px solid #e5e5e5;
+    background-color:black;
+    border-radius:5px;
+    color:#e5e5e5;
+    font-size:  1.2em;
+    padding:7px;
+    text-align: center;
+
+}
+
+
+.userHover {
+    border: 1px solid #ffb900;
+    cursor: pointer;
+    
+    box-shadow: 0px 1px 5px 0px #ffb900;
+}
+
+
+.userClick {
+    border: 1px solid #ffb900;
+
+    box-shadow: 0px 1px 5px 0px #ffb900;
+    
+    transition: all 2s ease;
+    transform: scale(1.1);
+}
+
+.user-buttons, .computer-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.user-buttons>*,.computer-buttons>*{
+    flex:0 1 20%
+}
+.button h3:last-child{
+    padding-top: 5px;
+}
+.computerPick {
+    border: 1px solid #ffb900;
+    
+            box-shadow: 0px 1px 5px 0px #ffb900;
+    
+    transition: all 2s ease;
+    
+            transform: scale(1.1);
+}
+
+
+.refresh {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 15px 7px;
+    width: 50%;
+}
+
+
+.player-container{
+    min-width: 250px;
+}
+.player-label{
+    margin-bottom: 5px ;
+    margin-top: 15px;
+}
+.user-score,.computer-score{
+    font-size: 1.7em;
+    color: #ffb900;
+}
+.user-container,.computer-container{
+    border:1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    padding: 10px 3vw;
+}
+.user-container,.computer-container{
+    background-color: #314158;
+}
+.user-profile,.computer-profile{
+    display: flex;
+    justify-content: space-between;
+}
+.user-icon{
+    line-height: 42px;
+}
+.round-result{
+    color:#A52A2A;
+    font-size: 1.2em;
+    padding:15px ;
+}
+li {
+    line-height: 2em;
+}
+@media only screen and (min-width:450px){
+    .game-wrapper{
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+@media only screen and(min-width:600px){
+    .game-wrapper{
+      display: flex;
+      flex-direction: row;
+      max-width: 850px;
+      flex-wrap: wrap;
+    }
+    .game-wrapper>*{
+        flex:0 1 45%;
+    }
+    .player-container{
+        margin: 0 15px;
+    }
+    .round-result {
+        
+            flex: 0 1 100%;
+    }
+
+    .refresh {
+    
+            flex: 0 1 25%;
+    }
+}
+
+
+
